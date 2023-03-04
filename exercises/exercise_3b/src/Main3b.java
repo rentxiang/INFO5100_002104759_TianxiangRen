@@ -1,5 +1,5 @@
-import java.io.*
-;
+import java.io.*;
+
 public class Main3b {
     public static void main(String[] args) {
         System.out.println("---------------------------");

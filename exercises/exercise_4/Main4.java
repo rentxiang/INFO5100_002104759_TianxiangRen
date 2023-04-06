@@ -3,8 +3,8 @@ import java.util.regex.Pattern;
 
 public class Main4 {
   public static void main(String[] args) {
-    String subject1 = "The quick brown fox jumps over the lazy dog.";
-    String subject2 = "Email me at john.doe@example.com or jane.doe@example.com";
+    String subject1 = "David loves to play Call of Duty";
+    String subject2 = "Email me at rentxiang@gmail.com or rentxiang@github.com (fake)";
     String subject3 = "123-456-7890";
     String subject4 = "Password123";
     String subject5 = "12/31/2022";
@@ -19,7 +19,7 @@ public class Main4 {
     System.out.println();
 
     // Pattern 2: Find all email addresses in a string
-    Pattern pattern2 = Pattern.compile("\\b\\w+\\.\\w+@\\w+\\.\\w+\\b");
+    Pattern pattern2 = Pattern.compile("\\b\\w+\\w+@\\w+\\.\\w+\\b");
     Matcher matcher2 = pattern2.matcher(subject2);
     System.out.println("Pattern 2: Email addresses");
     while (matcher2.find()) {
@@ -55,7 +55,7 @@ public class Main4 {
     System.out.println();
     
     // Negative case
-    String subject6 = "The quick brown fox jumps over the lazy dog.";
+    String subject6 = "Dylan is dumb boy.";
     Pattern pattern6 = Pattern.compile("\\d{2}/\\d{2}/\\d{4}");
     Matcher matcher6 = pattern6.matcher(subject6);
     System.out.println("Negative case: Dates in mm/dd/yyyy format not found in subject6");
